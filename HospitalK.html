@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DEKODE DKA Feedback</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function checkPassword() {
+      var input = document.getElementById("password").value;
+      var correctPassword = "NANFEF";
+
+      if (input === correctPassword) {
+        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiYWUwZTM1MDItMDQyMi00MjdhLTllNjItODY5MDZkYzVhMGQ5IiwidCI6ImIwMjRjYWNmLWRlZGUtNDI0MS1hMTVjLTNjOTdkNTUzZTlmMyIsImMiOjh9";
+      } else {
+        alert("Incorrect code. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>DEKODE DKA Feedback Dashboard - Hospital K</h2>
+    <p>Please enter your access code to view the dashboard:</p>
+    <input type="password" id="password" placeholder="Access Code" />
+    <br>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+</body>
+</html>
