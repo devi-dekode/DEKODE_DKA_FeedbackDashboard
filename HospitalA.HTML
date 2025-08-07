@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital A - DEKODE Feedback</title>
+  <script>
+    function checkPassword() {
+      var input = document.getElementById("password").value;
+
+      var correctPassword = "123";
+
+      if (input === correctPassword) {
+      
+        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiNTI2NTQ2NDItNGNhMy00MWExLThkYzctNzdkNzQ1YzJmZjNkIiwidCI6ImIwMjRjYWNmLWRlZGUtNDI0MS1hMTVjLTNjOTdkNTUzZTlmMyIsImMiOjh9";
+      } else {
+        alert("Incorrect code. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Hospital A DEKODE Dashboard</h2>
+  <p>Please enter your access code to view the dashboard:</p>
+  <input type="password" id="password" />
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
